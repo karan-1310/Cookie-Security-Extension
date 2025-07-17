@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Cookie Security Enhancer</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <h2>🍪 Cookie Security Enhancer</h2>
+    
+    <button id="scanBtn">🔍 Scan Cookies</button>
+
+    <table id="cookieTable">
+      <thead>
+        <tr>
+          <th>Cookie</th>
+          <th>Secure</th>
+          <th>HttpOnly</th>
+          <th>SameSite</th>
+        </tr>
+      </thead>
+      <tbody id="resultsBody">
+        <!-- Cookie rows will be dynamically inserted here -->
+      </tbody>
+    </table>
+
+    <p id="summary"></p>
+    <p id="riskLevel"></p>
+
+    <div id="result" class="result-box"></div>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
